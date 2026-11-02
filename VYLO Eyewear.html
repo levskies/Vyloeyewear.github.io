@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VYLO Eyewear — Made by hand. Worn your way.</title>
+<style>
+:root{--bg:#f6f2ec;--fg:#1c1a17;--mut:#6b655c;--card:#ffffff;--line:#ddd5c8;--acc:#b5541f;--accfg:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14120f;--fg:#f2ece2;--mut:#a39a8c;--card:#1d1a16;--line:#332e27;--acc:#e0834a;--accfg:#14120f}}
+:root[data-theme="dark"]{--bg:#14120f;--fg:#f2ece2;--mut:#a39a8c;--card:#1d1a16;--line:#332e27;--acc:#e0834a;--accfg:#14120f}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;letter-spacing:.32em;font-size:20px;text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;color:var(--mut);font-size:14px}
+nav a:hover{color:var(--fg)}
+.hero{text-align:center;padding:56px 0 72px}
+.hero svg{width:min(300px,70%);height:auto;color:var(--fg)}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:13px;color:var(--mut);margin-top:24px}
+h1{font-size:clamp(34px,7vw,64px);line-height:1.08;margin:18px 0 14px;letter-spacing:-.02em}
+.sub{color:var(--mut);max-width:520px;margin:0 auto 28px}
+.btn{display:inline-block;background:var(--acc);color:var(--accfg);padding:13px 26px;border-radius:99px;text-decoration:none;font-weight:600}
+.count{display:flex;justify-content:center;gap:12px;margin-top:36px}
+.count div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 8px;min-width:72px}
+.count b{display:block;font-size:28px}
+.count span{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 12px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card svg{width:100%;height:60px;color:var(--fg);margin-bottom:10px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:var(--mut);font-size:14px}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--mut);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">VYLO</a>
+  <nav><a href="#story">Story</a><a href="#craft">Craft</a><a href="#launch">Launch</a></nav>
+</header>
+
+<div class="hero" id="top">
+  <svg viewBox="0 0 300 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" role="img" aria-label="VYLO eyewear mark">
+    <rect x="22" y="22" width="100" height="62" rx="26"/>
+    <rect x="178" y="22" width="100" height="62" rx="26"/>
+    <path d="M122 44q28-14 56 0"/>
+    <path d="M22 40L4 32M278 40l18-8"/>
+  </svg>
+  <div><span class="tag">Launching Nov 21, 2026 · Baguio City</span></div>
+  <h1>Eyewear, made by hand.<br>Worn your way.</h1>
+  <p class="sub">VYLO is an own-made eyewear brand. Every frame is shaped, finished and checked by us.</p>
+  <a class="btn" href="#launch">Join the launch</a>
+  <div class="count" id="count" aria-live="polite"></div>
+</div>
+
+<section id="story">
+  <h2>Our story</h2>
+  <p style="max-width:620px;color:var(--mut)">VYLO began with a simple idea: glasses should feel personal. We make our own frames so every pair has a clear shape, a comfortable fit and a character of its own.</p>
+</section>
+
+<section id="craft">
+  <h2>Made by us</h2>
+  <div class="grid">
+    <div class="card">
+      <svg viewBox="0 0 120 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><rect x="6" y="10" width="46" height="30" rx="12"/><rect x="68" y="10" width="46" height="30" rx="12"/><path d="M52 22q8-5 16 0"/></svg>
+      <h3>Own design</h3><p>Original frame shapes drawn in-house.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 120 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="30" cy="25" r="17"/><circle cx="90" cy="25" r="17"/><path d="M47 22q13-6 26 0"/></svg>
+      <h3>Hand finished</h3><p>Each pair is finished and checked by hand.</p>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 120 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M8 14h46l6 22H14zM66 14h46l-6 22H72z"/><path d="M54 18q6-3 12 0"/></svg>
+      <h3>Built to wear</h3><p>Light, comfortable and made for everyday use.</p>
+    </div>
+  </div>
+</section>
+
+<section id="launch" style="text-align:center">
+  <h2>Launch day</h2>
+  <p style="color:var(--mut)">November 21, 2026 · Baguio City</p>
+  <p style="color:var(--mut);max-width:480px;margin:0 auto">Come see the first VYLO collection in person. Follow VYLO for updates and details on the venue.</p>
+</section>
+
+<footer>© 2026 VYLO Eyewear · Vyloeyewear.com</footer>
+</div>
+<script>
+(function(){
+  var el=document.getElementById('count'),t=new Date('2026-11-21T00:00:00+08:00').getTime();
+  function tick(){
+    var d=t-Date.now();
+    if(d<=0){el.innerHTML='<div><b>🎉</b><span>Launched</span></div>';return;}
+    var s=Math.floor(d/1000),v=[[Math.floor(s/86400),'Days'],[Math.floor(s%86400/3600),'Hours'],[Math.floor(s%3600/60),'Min'],[s%60,'Sec']];
+    el.innerHTML=v.map(function(x){return '<div><b>'+x[0]+'</b><span>'+x[1]+'</span></div>'}).join('');
+  }
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
